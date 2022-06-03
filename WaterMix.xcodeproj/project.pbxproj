@@ -1,0 +1,609 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		64EEADC428498D5300548FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEADC328498D5300548FAF /* AppDelegate.swift */; };
+		64EEADC628498D5300548FAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEADC528498D5300548FAF /* SceneDelegate.swift */; };
+		64EEADC828498D5300548FAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEADC728498D5300548FAF /* ViewController.swift */; };
+		64EEADCB28498D5300548FAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EEADC928498D5300548FAF /* Main.storyboard */; };
+		64EEADCD28498D5400548FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EEADCC28498D5400548FAF /* Assets.xcassets */; };
+		64EEADD028498D5400548FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EEADCE28498D5400548FAF /* LaunchScreen.storyboard */; };
+		64EEADDB28498D5400548FAF /* WaterMixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEADDA28498D5400548FAF /* WaterMixTests.swift */; };
+		64EEADE528498D5400548FAF /* WaterMixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEADE428498D5400548FAF /* WaterMixUITests.swift */; };
+		64EEADE728498D5400548FAF /* WaterMixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEADE628498D5400548FAF /* WaterMixUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		64EEADD728498D5400548FAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64EEADB828498D5300548FAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64EEADBF28498D5300548FAF;
+			remoteInfo = WaterMix;
+		};
+		64EEADE128498D5400548FAF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 64EEADB828498D5300548FAF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 64EEADBF28498D5300548FAF;
+			remoteInfo = WaterMix;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		64EEADC028498D5300548FAF /* WaterMix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterMix.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		64EEADC328498D5300548FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		64EEADC528498D5300548FAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		64EEADC728498D5300548FAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		64EEADCA28498D5300548FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		64EEADCC28498D5400548FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		64EEADCF28498D5400548FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		64EEADD128498D5400548FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		64EEADD628498D5400548FAF /* WaterMixTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterMixTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64EEADDA28498D5400548FAF /* WaterMixTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMixTests.swift; sourceTree = "<group>"; };
+		64EEADE028498D5400548FAF /* WaterMixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterMixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		64EEADE428498D5400548FAF /* WaterMixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMixUITests.swift; sourceTree = "<group>"; };
+		64EEADE628498D5400548FAF /* WaterMixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		64EEADBD28498D5300548FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EEADD328498D5400548FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EEADDD28498D5400548FAF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		64EEADB728498D5300548FAF = {
+			isa = PBXGroup;
+			children = (
+				64EEADC228498D5300548FAF /* WaterMix */,
+				64EEADD928498D5400548FAF /* WaterMixTests */,
+				64EEADE328498D5400548FAF /* WaterMixUITests */,
+				64EEADC128498D5300548FAF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		64EEADC128498D5300548FAF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				64EEADC028498D5300548FAF /* WaterMix.app */,
+				64EEADD628498D5400548FAF /* WaterMixTests.xctest */,
+				64EEADE028498D5400548FAF /* WaterMixUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		64EEADC228498D5300548FAF /* WaterMix */ = {
+			isa = PBXGroup;
+			children = (
+				64EEADC328498D5300548FAF /* AppDelegate.swift */,
+				64EEADC528498D5300548FAF /* SceneDelegate.swift */,
+				64EEADC728498D5300548FAF /* ViewController.swift */,
+				64EEADC928498D5300548FAF /* Main.storyboard */,
+				64EEADCC28498D5400548FAF /* Assets.xcassets */,
+				64EEADCE28498D5400548FAF /* LaunchScreen.storyboard */,
+				64EEADD128498D5400548FAF /* Info.plist */,
+			);
+			path = WaterMix;
+			sourceTree = "<group>";
+		};
+		64EEADD928498D5400548FAF /* WaterMixTests */ = {
+			isa = PBXGroup;
+			children = (
+				64EEADDA28498D5400548FAF /* WaterMixTests.swift */,
+			);
+			path = WaterMixTests;
+			sourceTree = "<group>";
+		};
+		64EEADE328498D5400548FAF /* WaterMixUITests */ = {
+			isa = PBXGroup;
+			children = (
+				64EEADE428498D5400548FAF /* WaterMixUITests.swift */,
+				64EEADE628498D5400548FAF /* WaterMixUITestsLaunchTests.swift */,
+			);
+			path = WaterMixUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		64EEADBF28498D5300548FAF /* WaterMix */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64EEADEA28498D5400548FAF /* Build configuration list for PBXNativeTarget "WaterMix" */;
+			buildPhases = (
+				64EEADBC28498D5300548FAF /* Sources */,
+				64EEADBD28498D5300548FAF /* Frameworks */,
+				64EEADBE28498D5300548FAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WaterMix;
+			productName = WaterMix;
+			productReference = 64EEADC028498D5300548FAF /* WaterMix.app */;
+			productType = "com.apple.product-type.application";
+		};
+		64EEADD528498D5400548FAF /* WaterMixTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64EEADED28498D5400548FAF /* Build configuration list for PBXNativeTarget "WaterMixTests" */;
+			buildPhases = (
+				64EEADD228498D5400548FAF /* Sources */,
+				64EEADD328498D5400548FAF /* Frameworks */,
+				64EEADD428498D5400548FAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64EEADD828498D5400548FAF /* PBXTargetDependency */,
+			);
+			name = WaterMixTests;
+			productName = WaterMixTests;
+			productReference = 64EEADD628498D5400548FAF /* WaterMixTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		64EEADDF28498D5400548FAF /* WaterMixUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 64EEADF028498D5400548FAF /* Build configuration list for PBXNativeTarget "WaterMixUITests" */;
+			buildPhases = (
+				64EEADDC28498D5400548FAF /* Sources */,
+				64EEADDD28498D5400548FAF /* Frameworks */,
+				64EEADDE28498D5400548FAF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				64EEADE228498D5400548FAF /* PBXTargetDependency */,
+			);
+			name = WaterMixUITests;
+			productName = WaterMixUITests;
+			productReference = 64EEADE028498D5400548FAF /* WaterMixUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		64EEADB828498D5300548FAF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					64EEADBF28498D5300548FAF = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					64EEADD528498D5400548FAF = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 64EEADBF28498D5300548FAF;
+					};
+					64EEADDF28498D5400548FAF = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 64EEADBF28498D5300548FAF;
+					};
+				};
+			};
+			buildConfigurationList = 64EEADBB28498D5300548FAF /* Build configuration list for PBXProject "WaterMix" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 64EEADB728498D5300548FAF;
+			productRefGroup = 64EEADC128498D5300548FAF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				64EEADBF28498D5300548FAF /* WaterMix */,
+				64EEADD528498D5400548FAF /* WaterMixTests */,
+				64EEADDF28498D5400548FAF /* WaterMixUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		64EEADBE28498D5300548FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64EEADD028498D5400548FAF /* LaunchScreen.storyboard in Resources */,
+				64EEADCD28498D5400548FAF /* Assets.xcassets in Resources */,
+				64EEADCB28498D5300548FAF /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EEADD428498D5400548FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EEADDE28498D5400548FAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		64EEADBC28498D5300548FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64EEADC828498D5300548FAF /* ViewController.swift in Sources */,
+				64EEADC428498D5300548FAF /* AppDelegate.swift in Sources */,
+				64EEADC628498D5300548FAF /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EEADD228498D5400548FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64EEADDB28498D5400548FAF /* WaterMixTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		64EEADDC28498D5400548FAF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				64EEADE728498D5400548FAF /* WaterMixUITestsLaunchTests.swift in Sources */,
+				64EEADE528498D5400548FAF /* WaterMixUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		64EEADD828498D5400548FAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64EEADBF28498D5300548FAF /* WaterMix */;
+			targetProxy = 64EEADD728498D5400548FAF /* PBXContainerItemProxy */;
+		};
+		64EEADE228498D5400548FAF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 64EEADBF28498D5300548FAF /* WaterMix */;
+			targetProxy = 64EEADE128498D5400548FAF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		64EEADC928498D5300548FAF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64EEADCA28498D5300548FAF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		64EEADCE28498D5400548FAF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64EEADCF28498D5400548FAF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		64EEADE828498D5400548FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		64EEADE928498D5400548FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		64EEADEB28498D5400548FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XJJN8UXL48;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WaterMix/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmkim.WaterMix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		64EEADEC28498D5400548FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XJJN8UXL48;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = WaterMix/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmkim.WaterMix;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		64EEADEE28498D5400548FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XJJN8UXL48;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmkim.WaterMixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterMix.app/WaterMix";
+			};
+			name = Debug;
+		};
+		64EEADEF28498D5400548FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XJJN8UXL48;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmkim.WaterMixTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WaterMix.app/WaterMix";
+			};
+			name = Release;
+		};
+		64EEADF128498D5400548FAF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XJJN8UXL48;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmkim.WaterMixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WaterMix;
+			};
+			name = Debug;
+		};
+		64EEADF228498D5400548FAF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XJJN8UXL48;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.jmkim.WaterMixUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = WaterMix;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		64EEADBB28498D5300548FAF /* Build configuration list for PBXProject "WaterMix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64EEADE828498D5400548FAF /* Debug */,
+				64EEADE928498D5400548FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64EEADEA28498D5400548FAF /* Build configuration list for PBXNativeTarget "WaterMix" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64EEADEB28498D5400548FAF /* Debug */,
+				64EEADEC28498D5400548FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64EEADED28498D5400548FAF /* Build configuration list for PBXNativeTarget "WaterMixTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64EEADEE28498D5400548FAF /* Debug */,
+				64EEADEF28498D5400548FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		64EEADF028498D5400548FAF /* Build configuration list for PBXNativeTarget "WaterMixUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				64EEADF128498D5400548FAF /* Debug */,
+				64EEADF228498D5400548FAF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 64EEADB828498D5300548FAF /* Project object */;
+}
