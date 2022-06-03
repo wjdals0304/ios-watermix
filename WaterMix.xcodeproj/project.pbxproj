@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		64EEADC428498D5300548FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEADC328498D5300548FAF /* AppDelegate.swift */; };
 		64EEADC628498D5300548FAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEADC528498D5300548FAF /* SceneDelegate.swift */; };
-		64EEADC828498D5300548FAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEADC728498D5300548FAF /* ViewController.swift */; };
 		64EEADCD28498D5400548FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EEADCC28498D5400548FAF /* Assets.xcassets */; };
 		64EEADD028498D5400548FAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 64EEADCE28498D5400548FAF /* LaunchScreen.storyboard */; };
 		64EEADDB28498D5400548FAF /* WaterMixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEADDA28498D5400548FAF /* WaterMixTests.swift */; };
@@ -38,7 +37,6 @@
 		64EEADC028498D5300548FAF /* WaterMix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterMix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64EEADC328498D5300548FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64EEADC528498D5300548FAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		64EEADC728498D5300548FAF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		64EEADCC28498D5400548FAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		64EEADCF28498D5400548FAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		64EEADD128498D5400548FAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,7 +97,6 @@
 			children = (
 				64EEADC328498D5300548FAF /* AppDelegate.swift */,
 				64EEADC528498D5300548FAF /* SceneDelegate.swift */,
-				64EEADC728498D5300548FAF /* ViewController.swift */,
 				64EEADCC28498D5400548FAF /* Assets.xcassets */,
 				64EEADCE28498D5400548FAF /* LaunchScreen.storyboard */,
 				64EEADD128498D5400548FAF /* Info.plist */,
@@ -254,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				64EEADC828498D5300548FAF /* ViewController.swift in Sources */,
 				64EEADC428498D5300548FAF /* AppDelegate.swift in Sources */,
 				64EEADC628498D5300548FAF /* SceneDelegate.swift in Sources */,
 			);
