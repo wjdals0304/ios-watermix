@@ -12,6 +12,17 @@ extension WaterMix {
     
     final class ViewController : UIViewController {
         
+        override func loadView() {
+            super.loadView()
+            self.view = WaterMix.RootView()
+        }
+        
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            title = "물타기 계산기"
+            
+        }
+        
     }
     
 }
