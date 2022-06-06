@@ -10,7 +10,9 @@
 "Ratio" = "Ratio";
 "TotalAccount" = "TotalAccount";
 "TotalPrice" = "TotalPrice";
+"proAndLoss" = "proAndLoss";
 "CurrentStock" = "CurrentStock";
+"CurrentMarketPrice" = "CurrentMarketPrice";
 "CurrentStockPrice" = "CurrentStockPrice";
 "CurrentStockAmount" = "CurrentStockAmount";
 "CurrentStockTotalPrice" = "CurrentStockTotalPrice";

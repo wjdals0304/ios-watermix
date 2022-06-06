@@ -9,8 +9,10 @@
 "TotalPurchasePrice" = "최종 평단가";
 "Ratio" = "손익률";
 "TotalAmount" = "최종 수량";
-"TotalPrice" = "총 금액";
+"TotalPrice" = "최종 매수 금액";
+"proAndLoss" = "손익금";
 "CurrentStock" = "현재 보유 주식";
+"CurrentMarketPrice" = "현재 시장가";
 "CurrentStockPrice" = "보유 주식 평단가";
 "CurrentStockAmount" = "보유 수량";
 "CurrentStockTotalPrice" = "총 매입 금액";
