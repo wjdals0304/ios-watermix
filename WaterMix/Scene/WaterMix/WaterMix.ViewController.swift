@@ -14,13 +14,12 @@ extension WaterMix {
         
         override func loadView() {
             super.loadView()
-            self.view = WaterMix.RootView()
+            self.view = WaterMix.RootView(viewModel: WaterMix.ViewModel())
         }
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            title = "물타기 계산기"
-            
+            title = L10n.title.description
         }
         
     }
