@@ -127,9 +127,16 @@ extension WaterMix {
                 .disposed(by: disposeBag)
             
             viewModel.getTotalRatio
-                .map { String($0) + "%" }
                 .distinctUntilChanged()
-                .bind(to: totalAccountView.proAndLossRatioValue.rx.text)
+                .bind{ [weak self] in
+                    self?.totalAccountView.proAndLossRatioValue.text = String(format: "%.2f %%", $0)
+                    if $0 > 0  {
+                        self?.totalAccountView.proAndLossRatioValue.textColor = UIColor.ff0F00
+                    } else {
+                        self?.totalAccountView.proAndLossRatioValue.textColor = UIColor._0075Ff
+                    }
+                    
+                }
                 .disposed(by: disposeBag)
             
             viewModel.getProAndLoss
