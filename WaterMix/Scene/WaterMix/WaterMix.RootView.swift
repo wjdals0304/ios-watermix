@@ -121,9 +121,11 @@ extension WaterMix {
                 .disposed(by: disposeBag)
             
             viewModel.getTotalPurchasePrice
-                .map { String(Int64($0)) }
                 .distinctUntilChanged()
-                .bind(to: totalAccountView.totalStockValue.rx.text )
+                .bind { [weak self] in
+                    self?.totalAccountView.totalStockValue.text = Int64($0).withCommas()
+                    self?.totalAccountView.totalStockValue.textColor = UIColor.ff5C00
+                }
                 .disposed(by: disposeBag)
             
             viewModel.getTotalRatio
