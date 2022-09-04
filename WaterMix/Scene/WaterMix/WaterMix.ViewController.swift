@@ -20,6 +20,8 @@ extension WaterMix {
         override func viewDidLoad() {
             super.viewDidLoad()
             title = L10n.title.description
+            self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage.undoArrow1, style: .plain, target: nil, action: nil)
+            self.navigationItem.rightBarButtonItem?.tintColor = UIColor._181818
         }
         
     }
