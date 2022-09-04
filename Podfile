@@ -14,6 +14,7 @@ target 'WaterMix' do
   pod 'SwiftGen', '~> 6.0'
   pod 'SwiftLint'  
   pod 'SnapKit', '~> 5.6.0'
+  pod 'TextFieldEffects'
 
   target 'WaterMixTests' do
     inherit! :search_paths
