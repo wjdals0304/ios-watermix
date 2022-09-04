@@ -29,22 +29,24 @@ final class StockAddView: BaseUIView {
             NSAttributedString.Key.foregroundColor : UIColor._929292,
             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20)
         ])
+        textField.keyboardType = .numberPad
         return textField
     }()
     
     
-    private let stockAmountTextField: AkiraTextField = {
+    let stockAmountTextField: AkiraTextField = {
         let textField = AkiraTextField()
-          textField.backgroundColor = UIColor.f8F8F8
-          textField.borderColor = UIColor.f8F8F8
-          textField.textColor = UIColor.black
-          textField.placeholderColor = UIColor._929292
-          textField.font = UIFont.systemFont(ofSize: 16)
-          textField.attributedPlaceholder = NSAttributedString(string: "", attributes: [
+        textField.backgroundColor = UIColor.f8F8F8
+        textField.borderColor = UIColor.f8F8F8
+        textField.textColor = UIColor.black
+        textField.placeholderColor = UIColor._929292
+        textField.font = UIFont.systemFont(ofSize: 16)
+        textField.attributedPlaceholder = NSAttributedString(string: "", attributes: [
               NSAttributedString.Key.foregroundColor : UIColor._929292,
               NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20)
           ])
-          return textField
+        textField.keyboardType = .numberPad
+        return textField
     }()
     
     private let totalPriceLabel: UILabel = {
@@ -55,7 +57,7 @@ final class StockAddView: BaseUIView {
         return label
     }()
     
-    private let totalPriceValue: UILabel = {
+    public let totalPriceValue: UILabel = {
         let label = UILabel()
         label.textColor = UIColor._929292
         label.font = UIFont.boldSystemFont(ofSize: 20)
@@ -127,7 +129,7 @@ final class StockAddView: BaseUIView {
         totalPriceValue.snp.makeConstraints { make in
             make.top.equalTo(totalPriceLabel.snp.bottom).offset(2)
             make.trailing.equalTo(self.snp.trailing)
-            make.width.equalTo(18)
+            make.width.greaterThanOrEqualTo(18)
             make.height.equalTo(24)
         }
         
