@@ -18,6 +18,8 @@ internal enum L10n {
   internal static var addStockPrice: String { L10n.tr("Localizable", "AddStockPrice") }
   /// 총 추매 금액
   internal static var addStockTotalPrice: String { L10n.tr("Localizable", "AddStockTotalPrice") }
+  /// 현재 시장가
+  internal static var currentMarketPrice: String { L10n.tr("Localizable", "CurrentMarketPrice") }
   /// 현재 보유 주식
   internal static var currentStock: String { L10n.tr("Localizable", "CurrentStock") }
   /// 보유 수량
@@ -26,13 +28,15 @@ internal enum L10n {
   internal static var currentStockPrice: String { L10n.tr("Localizable", "CurrentStockPrice") }
   /// 총 매입 금액
   internal static var currentStockTotalPrice: String { L10n.tr("Localizable", "CurrentStockTotalPrice") }
+  /// 손익금
+  internal static var proAndLoss: String { L10n.tr("Localizable", "proAndLoss") }
   /// 손익률
   internal static var ratio: String { L10n.tr("Localizable", "Ratio") }
   /// 물타기 계산기
   internal static var title: String { L10n.tr("Localizable", "Title") }
   /// 최종 수량
   internal static var totalAmount: String { L10n.tr("Localizable", "TotalAmount") }
-  /// 총 금액
+  /// 최종 매수 금액
   internal static var totalPrice: String { L10n.tr("Localizable", "TotalPrice") }
   /// 최종 평단가
   internal static var totalPurchasePrice: String { L10n.tr("Localizable", "TotalPurchasePrice") }
