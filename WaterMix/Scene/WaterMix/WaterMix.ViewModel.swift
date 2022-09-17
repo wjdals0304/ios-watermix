@@ -47,7 +47,7 @@ extension WaterMix {
         var addTotalPrice: Observable<UInt64>
 
         init() {
-        
+            // MARK: 총 매입 금액
             calCurrentTotalPrice = Observable.combineLatest(
                 currentStockPrice,
                 currentStockAmount,
@@ -55,7 +55,7 @@ extension WaterMix {
                     return price * amount
                 }
             )
-            
+            // MARK: 추가 매수 총액
             addTotalPrice = Observable.combineLatest(
                 addStockPrice,
                 addStockAmount,
@@ -64,46 +64,64 @@ extension WaterMix {
                 }
             )
             
-            
+            // MARK: 최종 매수 금액
             totalPrice = Observable.combineLatest(
                 calCurrentTotalPrice,
                 addTotalPrice,
-                resultSelector: { currentTotalPrice, addTotalPrice in
+                calCurrentTotalPrice,
+                resultSelector: { currentTotalPrice, addTotalPrice, calCurrentTotalPrice in
+                    if calCurrentTotalPrice == 0 {
+                        return 0
+                    }
                     return Float(currentTotalPrice + addTotalPrice)
                 }
             )
-            
+            // MARK: 최종 수량
             totalAmount = Observable.combineLatest(
                 currentStockAmount,
                 addStockAmount,
-                resultSelector: { currentAmount , addAmount in
+                calCurrentTotalPrice,
+                resultSelector: { currentAmount , addAmount, calCurrentTotalPrice in
+                    if calCurrentTotalPrice == 0 {
+                        return 0
+                    }
                     return Int(currentAmount + addAmount)
                 }
             )
-            
+            // MARK: 최종 평단가
             totalPurchasePrice = Observable.combineLatest(
                 totalPrice,
                 totalAmount,
-                resultSelector: { totalPrice, totalAmount in
-                    if totalAmount == 0 {
+                calCurrentTotalPrice,
+                resultSelector: { totalPrice, totalAmount, calCurrentTotalPrice in
+                    if totalAmount == 0 || calCurrentTotalPrice == 0 {
                         return 0.0
                     }
                     return Float64(totalPrice / Float(totalAmount))
                 }
             )
-
+            // MARK: 손익률
             totalRatio = Observable.combineLatest(
                 currentMarketPrice,
                 totalPurchasePrice,
-                resultSelector:  { marketPrice, purchasePrice in
+                addTotalPrice,
+                calCurrentTotalPrice,
+                resultSelector:  { marketPrice, purchasePrice, addTotalPrice, calCurrentTotalPrice in
+                    if purchasePrice == 0 || addTotalPrice == 0 || calCurrentTotalPrice == 0 {
+                        return 0
+                    }
                     return Float( ( (Double(marketPrice) - purchasePrice ) / purchasePrice )  * 100 )
                 }
             )
-            
+            // MARK: 손익금
             proAndLoss = Observable.combineLatest(
                 totalPrice,
                 totalRatio,
-                resultSelector: { totalPrice, ratio in
+                calCurrentTotalPrice,
+                resultSelector: { totalPrice, ratio, calCurrentTotalPrice in
+                    if totalPrice == 0 || calCurrentTotalPrice == 0 {
+                        return 0
+                    }
                     return Float(totalPrice + ( totalPrice * ( 0.01 * ratio)) )
                 }
             )
