@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1CCB47A3BA2377C934952267 /* Pods_WaterMix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ADFCCEB4D4E6060931D01494 /* Pods_WaterMix.framework */; };
+		5302ACD4E7819CDAF33235B6 /* Pods_WaterMix_WaterMixUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12D0CFDF67C8ED45D30374AB /* Pods_WaterMix_WaterMixUITests.framework */; };
 		64EEADC428498D5300548FAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEADC328498D5300548FAF /* AppDelegate.swift */; };
 		64EEADC628498D5300548FAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEADC528498D5300548FAF /* SceneDelegate.swift */; };
 		64EEADCD28498D5400548FAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EEADCC28498D5400548FAF /* Assets.xcassets */; };
@@ -14,6 +16,20 @@
 		64EEADDB28498D5400548FAF /* WaterMixTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEADDA28498D5400548FAF /* WaterMixTests.swift */; };
 		64EEADE528498D5400548FAF /* WaterMixUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEADE428498D5400548FAF /* WaterMixUITests.swift */; };
 		64EEADE728498D5400548FAF /* WaterMixUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEADE628498D5400548FAF /* WaterMixUITestsLaunchTests.swift */; };
+		64EEAE012849A1E800548FAF /* WaterMix.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEAE002849A1E800548FAF /* WaterMix.swift */; };
+		64EEAE032849A1FC00548FAF /* WaterMix.ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEAE022849A1FC00548FAF /* WaterMix.ViewModel.swift */; };
+		64EEAE052849A20A00548FAF /* WaterMix.ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEAE042849A20A00548FAF /* WaterMix.ViewController.swift */; };
+		64EEAE072849A21300548FAF /* WaterMix.RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEAE062849A21300548FAF /* WaterMix.RootView.swift */; };
+		64EEAE092849A5C300548FAF /* TotalAccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEAE082849A5C300548FAF /* TotalAccountView.swift */; };
+		64EEAE0B2849A5DC00548FAF /* StockAddView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEAE0A2849A5DC00548FAF /* StockAddView.swift */; };
+		64EEAE0D2849A6DD00548FAF /* BaseUIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEAE0C2849A6DD00548FAF /* BaseUIView.swift */; };
+		64EEAE0F2849ACB600548FAF /* Color.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 64EEAE0E2849ACB600548FAF /* Color.xcassets */; };
+		64EEAE152849EB7200548FAF /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 64EEAE172849EB7200548FAF /* Localizable.strings */; };
+		64EEAE1B284A012A00548FAF /* Strings+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEAE1A284A012A00548FAF /* Strings+Generated.swift */; };
+		64EEAE1D284A012E00548FAF /* Asset+Generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEAE1C284A012E00548FAF /* Asset+Generated.swift */; };
+		64EEAE22284C9E2400548FAF /* StockCurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEAE21284C9E2300548FAF /* StockCurrentView.swift */; };
+		64F78AEA285DABB3008AC56D /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F78AE9285DABB3008AC56D /* String+.swift */; };
+		DA6703B8432DA65C0684089B /* Pods_WaterMixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4475F003BF92CF959B1ABCA /* Pods_WaterMixTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +50,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		12D0CFDF67C8ED45D30374AB /* Pods_WaterMix_WaterMixUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterMix_WaterMixUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C65880BFBA93C673AEB8657 /* Pods-WaterMixTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterMixTests.release.xcconfig"; path = "Target Support Files/Pods-WaterMixTests/Pods-WaterMixTests.release.xcconfig"; sourceTree = "<group>"; };
+		399C8AD1F7309A6100C84F61 /* Pods-WaterMix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterMix.release.xcconfig"; path = "Target Support Files/Pods-WaterMix/Pods-WaterMix.release.xcconfig"; sourceTree = "<group>"; };
+		4E7CECE4F5C7705B795B687B /* Pods-WaterMix-WaterMixUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterMix-WaterMixUITests.release.xcconfig"; path = "Target Support Files/Pods-WaterMix-WaterMixUITests/Pods-WaterMix-WaterMixUITests.release.xcconfig"; sourceTree = "<group>"; };
+		59ABFB05605FE99393F0823D /* Pods-WaterMix-WaterMixUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterMix-WaterMixUITests.debug.xcconfig"; path = "Target Support Files/Pods-WaterMix-WaterMixUITests/Pods-WaterMix-WaterMixUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		5F340C9C695DD86E03E27D5E /* Pods-WaterMixTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterMixTests.debug.xcconfig"; path = "Target Support Files/Pods-WaterMixTests/Pods-WaterMixTests.debug.xcconfig"; sourceTree = "<group>"; };
 		64EEADC028498D5300548FAF /* WaterMix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WaterMix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		64EEADC328498D5300548FAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		64EEADC528498D5300548FAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +67,23 @@
 		64EEADE028498D5400548FAF /* WaterMixUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WaterMixUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		64EEADE428498D5400548FAF /* WaterMixUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMixUITests.swift; sourceTree = "<group>"; };
 		64EEADE628498D5400548FAF /* WaterMixUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMixUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		64EEAE002849A1E800548FAF /* WaterMix.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMix.swift; sourceTree = "<group>"; };
+		64EEAE022849A1FC00548FAF /* WaterMix.ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMix.ViewModel.swift; sourceTree = "<group>"; };
+		64EEAE042849A20A00548FAF /* WaterMix.ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMix.ViewController.swift; sourceTree = "<group>"; };
+		64EEAE062849A21300548FAF /* WaterMix.RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaterMix.RootView.swift; sourceTree = "<group>"; };
+		64EEAE082849A5C300548FAF /* TotalAccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalAccountView.swift; sourceTree = "<group>"; };
+		64EEAE0A2849A5DC00548FAF /* StockAddView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockAddView.swift; sourceTree = "<group>"; };
+		64EEAE0C2849A6DD00548FAF /* BaseUIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseUIView.swift; sourceTree = "<group>"; };
+		64EEAE0E2849ACB600548FAF /* Color.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Color.xcassets; sourceTree = "<group>"; };
+		64EEAE162849EB7200548FAF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		64EEAE182849EB7400548FAF /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/Localizable.strings; sourceTree = "<group>"; };
+		64EEAE1A284A012A00548FAF /* Strings+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Strings+Generated.swift"; sourceTree = "<group>"; };
+		64EEAE1C284A012E00548FAF /* Asset+Generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Asset+Generated.swift"; sourceTree = "<group>"; };
+		64EEAE21284C9E2300548FAF /* StockCurrentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StockCurrentView.swift; sourceTree = "<group>"; };
+		64F78AE9285DABB3008AC56D /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		A26B36DBF83FD67A22B8276C /* Pods-WaterMix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterMix.debug.xcconfig"; path = "Target Support Files/Pods-WaterMix/Pods-WaterMix.debug.xcconfig"; sourceTree = "<group>"; };
+		ADFCCEB4D4E6060931D01494 /* Pods_WaterMix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterMix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D4475F003BF92CF959B1ABCA /* Pods_WaterMixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterMixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +91,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CCB47A3BA2377C934952267 /* Pods_WaterMix.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,6 +99,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA6703B8432DA65C0684089B /* Pods_WaterMixTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -66,6 +107,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5302ACD4E7819CDAF33235B6 /* Pods_WaterMix_WaterMixUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -79,6 +121,8 @@
 				64EEADD928498D5400548FAF /* WaterMixTests */,
 				64EEADE328498D5400548FAF /* WaterMixUITests */,
 				64EEADC128498D5300548FAF /* Products */,
+				E4EDC82D51AF562E7C6ACC1D /* Pods */,
+				EA38C9E0C30EA22D8CB56E24 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -95,9 +139,12 @@
 		64EEADC228498D5300548FAF /* WaterMix */ = {
 			isa = PBXGroup;
 			children = (
+				64EEADF328499AFF00548FAF /* Scene */,
+				64EEADF528499BBA00548FAF /* Resources */,
+				64EEAE1E284B009F00548FAF /* Extension */,
+				64EEADF428499B0700548FAF /* UIKit */,
 				64EEADC328498D5300548FAF /* AppDelegate.swift */,
 				64EEADC528498D5300548FAF /* SceneDelegate.swift */,
-				64EEADCC28498D5400548FAF /* Assets.xcassets */,
 				64EEADCE28498D5400548FAF /* LaunchScreen.storyboard */,
 				64EEADD128498D5400548FAF /* Info.plist */,
 			);
@@ -121,6 +168,79 @@
 			path = WaterMixUITests;
 			sourceTree = "<group>";
 		};
+		64EEADF328499AFF00548FAF /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				64EEADF728499E4200548FAF /* WaterMix */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		64EEADF428499B0700548FAF /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				64EEAE0C2849A6DD00548FAF /* BaseUIView.swift */,
+				64EEAE082849A5C300548FAF /* TotalAccountView.swift */,
+				64EEAE0A2849A5DC00548FAF /* StockAddView.swift */,
+				64EEAE21284C9E2300548FAF /* StockCurrentView.swift */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		64EEADF528499BBA00548FAF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				64EEAE1A284A012A00548FAF /* Strings+Generated.swift */,
+				64EEAE1C284A012E00548FAF /* Asset+Generated.swift */,
+				64EEADCC28498D5400548FAF /* Assets.xcassets */,
+				64EEAE0E2849ACB600548FAF /* Color.xcassets */,
+				64EEAE172849EB7200548FAF /* Localizable.strings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		64EEADF728499E4200548FAF /* WaterMix */ = {
+			isa = PBXGroup;
+			children = (
+				64EEAE002849A1E800548FAF /* WaterMix.swift */,
+				64EEAE022849A1FC00548FAF /* WaterMix.ViewModel.swift */,
+				64EEAE042849A20A00548FAF /* WaterMix.ViewController.swift */,
+				64EEAE062849A21300548FAF /* WaterMix.RootView.swift */,
+			);
+			path = WaterMix;
+			sourceTree = "<group>";
+		};
+		64EEAE1E284B009F00548FAF /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				64F78AE9285DABB3008AC56D /* String+.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		E4EDC82D51AF562E7C6ACC1D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A26B36DBF83FD67A22B8276C /* Pods-WaterMix.debug.xcconfig */,
+				399C8AD1F7309A6100C84F61 /* Pods-WaterMix.release.xcconfig */,
+				59ABFB05605FE99393F0823D /* Pods-WaterMix-WaterMixUITests.debug.xcconfig */,
+				4E7CECE4F5C7705B795B687B /* Pods-WaterMix-WaterMixUITests.release.xcconfig */,
+				5F340C9C695DD86E03E27D5E /* Pods-WaterMixTests.debug.xcconfig */,
+				1C65880BFBA93C673AEB8657 /* Pods-WaterMixTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA38C9E0C30EA22D8CB56E24 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ADFCCEB4D4E6060931D01494 /* Pods_WaterMix.framework */,
+				12D0CFDF67C8ED45D30374AB /* Pods_WaterMix_WaterMixUITests.framework */,
+				D4475F003BF92CF959B1ABCA /* Pods_WaterMixTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,9 +248,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64EEADEA28498D5400548FAF /* Build configuration list for PBXNativeTarget "WaterMix" */;
 			buildPhases = (
+				76AB35D4E275E3DA94B63F47 /* [CP] Check Pods Manifest.lock */,
 				64EEADBC28498D5300548FAF /* Sources */,
 				64EEADBD28498D5300548FAF /* Frameworks */,
 				64EEADBE28498D5300548FAF /* Resources */,
+				C51237A118C7CDD114DEF3F1 /* [CP] Embed Pods Frameworks */,
+				64EEAE192849FE4100548FAF /* Swiftgen run script */,
 			);
 			buildRules = (
 			);
@@ -145,6 +268,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64EEADED28498D5400548FAF /* Build configuration list for PBXNativeTarget "WaterMixTests" */;
 			buildPhases = (
+				A88F48D152476E9F8B8BAB34 /* [CP] Check Pods Manifest.lock */,
 				64EEADD228498D5400548FAF /* Sources */,
 				64EEADD328498D5400548FAF /* Frameworks */,
 				64EEADD428498D5400548FAF /* Resources */,
@@ -163,9 +287,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 64EEADF028498D5400548FAF /* Build configuration list for PBXNativeTarget "WaterMixUITests" */;
 			buildPhases = (
+				20759CF8FBF2156973C2EEE2 /* [CP] Check Pods Manifest.lock */,
 				64EEADDC28498D5400548FAF /* Sources */,
 				64EEADDD28498D5400548FAF /* Frameworks */,
 				64EEADDE28498D5400548FAF /* Resources */,
+				E508C84DC774631E272E1786 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -207,6 +333,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ko,
 			);
 			mainGroup = 64EEADB728498D5300548FAF;
 			productRefGroup = 64EEADC128498D5300548FAF /* Products */;
@@ -226,7 +353,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				64EEADD028498D5400548FAF /* LaunchScreen.storyboard in Resources */,
+				64EEAE152849EB7200548FAF /* Localizable.strings in Resources */,
 				64EEADCD28498D5400548FAF /* Assets.xcassets in Resources */,
+				64EEAE0F2849ACB600548FAF /* Color.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -246,13 +375,145 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		20759CF8FBF2156973C2EEE2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaterMix-WaterMixUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		64EEAE192849FE4100548FAF /* Swiftgen run script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Swiftgen run script";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\nif [ \"${CONFIGURATION}\" = \"Release\" ]; then\n  echo \"Swiftgen is disabled in Release mode\"\n  exit 0\nfi\n\n\"$PODS_ROOT/SwiftGen/bin/swiftgen\"\n";
+		};
+		76AB35D4E275E3DA94B63F47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaterMix-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A88F48D152476E9F8B8BAB34 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WaterMixTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C51237A118C7CDD114DEF3F1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaterMix/Pods-WaterMix-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaterMix/Pods-WaterMix-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WaterMix/Pods-WaterMix-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E508C84DC774631E272E1786 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaterMix-WaterMixUITests/Pods-WaterMix-WaterMixUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WaterMix-WaterMixUITests/Pods-WaterMix-WaterMixUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WaterMix-WaterMixUITests/Pods-WaterMix-WaterMixUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		64EEADBC28498D5300548FAF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				64EEAE1B284A012A00548FAF /* Strings+Generated.swift in Sources */,
+				64EEAE012849A1E800548FAF /* WaterMix.swift in Sources */,
 				64EEADC428498D5300548FAF /* AppDelegate.swift in Sources */,
+				64EEAE072849A21300548FAF /* WaterMix.RootView.swift in Sources */,
+				64EEAE1D284A012E00548FAF /* Asset+Generated.swift in Sources */,
+				64EEAE032849A1FC00548FAF /* WaterMix.ViewModel.swift in Sources */,
+				64EEAE092849A5C300548FAF /* TotalAccountView.swift in Sources */,
+				64EEAE0B2849A5DC00548FAF /* StockAddView.swift in Sources */,
 				64EEADC628498D5300548FAF /* SceneDelegate.swift in Sources */,
+				64EEAE052849A20A00548FAF /* WaterMix.ViewController.swift in Sources */,
+				64F78AEA285DABB3008AC56D /* String+.swift in Sources */,
+				64EEAE0D2849A6DD00548FAF /* BaseUIView.swift in Sources */,
+				64EEAE22284C9E2400548FAF /* StockCurrentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +558,15 @@
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
+		64EEAE172849EB7200548FAF /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				64EEAE162849EB7200548FAF /* en */,
+				64EEAE182849EB7400548FAF /* ko */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -304,6 +574,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -365,6 +636,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
@@ -418,6 +690,7 @@
 		};
 		64EEADEB28498D5400548FAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A26B36DBF83FD67A22B8276C /* Pods-WaterMix.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -447,6 +720,7 @@
 		};
 		64EEADEC28498D5400548FAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 399C8AD1F7309A6100C84F61 /* Pods-WaterMix.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -476,6 +750,7 @@
 		};
 		64EEADEE28498D5400548FAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5F340C9C695DD86E03E27D5E /* Pods-WaterMixTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -496,6 +771,7 @@
 		};
 		64EEADEF28498D5400548FAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C65880BFBA93C673AEB8657 /* Pods-WaterMixTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -516,6 +792,7 @@
 		};
 		64EEADF128498D5400548FAF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59ABFB05605FE99393F0823D /* Pods-WaterMix-WaterMixUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -534,6 +811,7 @@
 		};
 		64EEADF228498D5400548FAF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E7CECE4F5C7705B795B687B /* Pods-WaterMix-WaterMixUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

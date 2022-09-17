@@ -1,0 +1,22 @@
+/* 
+  Localizable.strings
+  WaterMix
+
+  Created by 김정민 on 2022/06/03.
+  
+*/
+"Title" = "물타기 계산기";
+"TotalPurchasePrice" = "최종 평단가";
+"Ratio" = "손익률";
+"TotalAmount" = "최종 수량";
+"TotalPrice" = "최종 매수 금액";
+"proAndLoss" = "손익금";
+"CurrentStock" = "현재 보유 주식";
+"CurrentMarketPrice" = "현재 시장가";
+"CurrentStockPrice" = "보유 주식 평단가";
+"CurrentStockAmount" = "보유 수량";
+"CurrentStockTotalPrice" = "총 매입 금액";
+"AddStock" = "추가 매수";
+"AddStockPrice" = "추매 평단가";
+"AddStockAmount" = "추매 수량";
+"AddStockTotalPrice" = "총 추매 금액";
