@@ -85,9 +85,10 @@ extension WaterMix {
                 .disposed(by: disposeBag)
                         
             viewModel.getCalCurrentTotatlPrice
-                .map { String($0) }
                 .distinctUntilChanged()
-                .bind(to: currentStockView.totalPriceValue.rx.text)
+                .bind { [weak self] in
+                    self?.currentStockView.totalPriceValue.text = $0.withCommas()
+                }
                 .disposed(by: disposeBag)
             
             
@@ -101,18 +102,26 @@ extension WaterMix {
                 .bind(to: viewModel.getAddStockAmount)
                 .disposed(by: disposeBag)
             
-            
             viewModel.getAddTotalPrice
                 .map { String($0) }
                 .distinctUntilChanged()
                 .bind(to: stockAddView.totalPriceValue.rx.text)
                 .disposed(by: disposeBag)
             
-            viewModel.getTotalPrice
-                .map { String($0) }
+            viewModel.getAddTotalPrice
                 .distinctUntilChanged()
-                .bind(to: totalAccountView.totalPriceValue.rx.text)
+                .bind { [weak self] in
+                    self?.stockAddView.totalPriceValue.text = $0.withCommas()
+                }
                 .disposed(by: disposeBag)
+            
+            viewModel.getTotalPrice
+                .distinctUntilChanged()
+                .bind { [weak self] in
+                    self?.totalAccountView.totalPriceValue.text = $0.withCommas()
+                }
+                .disposed(by: disposeBag)
+            
             
             viewModel.getTotalAmount
                 .map { String($0) }
@@ -142,10 +151,12 @@ extension WaterMix {
                 .disposed(by: disposeBag)
             
             viewModel.getProAndLoss
-                .map { String($0) }
                 .distinctUntilChanged()
-                .bind(to: totalAccountView.proAndLossValue.rx.text)
+                .bind { [weak self] in
+                    self?.totalAccountView.proAndLossValue.text = $0.withCommas()
+                }
                 .disposed(by: disposeBag)
+            
         }
     }
 }
