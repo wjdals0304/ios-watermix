@@ -14,7 +14,7 @@ final class TotalAccountView: BaseUIView {
     let totalStockValue: UILabel = {
        let label = UILabel()
         label.textAlignment = .right
-        label.textColor = UIColor.b8Bbbe
+        label.textColor = UIColor.black
         label.font = UIFont.boldSystemFont(ofSize: 32)
         return label
     }()
@@ -29,14 +29,14 @@ final class TotalAccountView: BaseUIView {
         let label = UILabel()
          label.textAlignment = .right
          label.textColor = UIColor.b8Bbbe
-         label.font = UIFont.systemFont(ofSize: 13)
+         label.font = UIFont.boldSystemFont(ofSize: 13)
          return label
     }()
     
     let totalPriceValue: UILabel = {
         let label = UILabel()
         label.textAlignment = .right
-        label.textColor = UIColor.b8Bbbe
+        label.textColor = UIColor.black
         label.font = UIFont.boldSystemFont(ofSize: 18)
         return label
     }()
@@ -45,14 +45,14 @@ final class TotalAccountView: BaseUIView {
         let label = UILabel()
          label.textAlignment = .right
          label.textColor = UIColor.b8Bbbe
-         label.font = UIFont.systemFont(ofSize: 13)
+         label.font = UIFont.boldSystemFont(ofSize: 13)
          return label
     }()
     
     let totalAmountValue: UILabel = {
         let label = UILabel()
         label.textAlignment = .right
-        label.textColor = UIColor.b8Bbbe
+        label.textColor = UIColor.black
         label.font = UIFont.boldSystemFont(ofSize: 18)
         return label
     }()
@@ -61,14 +61,14 @@ final class TotalAccountView: BaseUIView {
         let label = UILabel()
          label.textAlignment = .right
          label.textColor = UIColor.b8Bbbe
-         label.font = UIFont.systemFont(ofSize: 13)
+         label.font = UIFont.boldSystemFont(ofSize: 13)
          return label
     }()
     
     let proAndLossRatioValue: UILabel = {
         let label = UILabel()
         label.textAlignment = .right
-        label.textColor = UIColor.b8Bbbe
+        label.textColor = UIColor.black
         label.font = UIFont.boldSystemFont(ofSize: 18)
         return label
     }()
@@ -77,7 +77,7 @@ final class TotalAccountView: BaseUIView {
         let label = UILabel()
         label.textAlignment = .right
         label.textColor = UIColor.b8Bbbe
-        label.font = UIFont.systemFont(ofSize: 13)
+        label.font = UIFont.boldSystemFont(ofSize: 13)
         return label
     }()
     
@@ -85,8 +85,8 @@ final class TotalAccountView: BaseUIView {
     let proAndLossValue: UILabel = {
         let label = UILabel()
         label.textAlignment = .right
-        label.textColor = UIColor.b8Bbbe
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.textColor = UIColor.black
+        label.font = UIFont.boldSystemFont(ofSize: 18)
         return label
     }()
     

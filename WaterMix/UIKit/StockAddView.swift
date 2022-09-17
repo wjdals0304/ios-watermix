@@ -59,7 +59,7 @@ final class StockAddView: BaseUIView {
     
     public let totalPriceValue: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor._929292
+        label.textColor = UIColor.black
         label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textAlignment = .right
         return label
