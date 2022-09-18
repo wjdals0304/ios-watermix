@@ -8,7 +8,6 @@ import UIKit
 import SnapKit
 import RxSwift
 import RxCocoa
-import Foundation
 
 extension WaterMix {
     
@@ -16,6 +15,21 @@ extension WaterMix {
         
         let disposeBag = DisposeBag()
         private let viewModel: WaterMixModelType
+        
+        private let headerView = UIView()
+        private let titleLabel: UILabel = {
+           let label = UILabel()
+            label.text = L10n.title.description
+            label.textColor = UIColor.black
+            label.font = UIFont.boldSystemFont(ofSize: 18)
+            return label
+        }()
+        
+        private let arrowButton: UIButton = {
+            let button = UIButton()
+            button.setImage(UIImage.undoArrow1, for: .normal)
+            return button
+        }()
         
         private let totalAccountView = TotalAccountView()
         
@@ -36,16 +50,39 @@ extension WaterMix {
         override func setup() {
             
             [
+                headerView,
                 totalAccountView,
                 currentStockView,
                 stockAddView
+                
             ].forEach { self.addSubview($0) }
+                        
+            [
+             titleLabel,
+             arrowButton
+            ].forEach { self.headerView.addSubview($0)}
             
         }
         
         override func setupConstraints() {
+            headerView.snp.makeConstraints { make in
+                make.top.equalTo(self.safeAreaLayoutGuide)
+                make.leading.equalToSuperview().offset(15)
+                make.trailing.equalToSuperview().inset(16)
+                make.height.equalTo(22)
+            }
+            
+            titleLabel.snp.makeConstraints { make in
+                make.center.equalTo(self.headerView.snp.center)
+            }
+            
+            arrowButton.snp.makeConstraints { make in
+                make.top.trailing.equalToSuperview()
+                make.width.height.equalTo(22)
+            }
+            
             totalAccountView.snp.makeConstraints { make in
-                make.top.equalTo(self.safeAreaLayoutGuide).offset(18)
+                make.top.equalTo(self.headerView.snp.bottom).offset(15)
                 make.leading.equalToSuperview().offset(15)
                 make.width.equalTo(self).multipliedBy(0.92)
                 make.height.equalTo(200)
@@ -87,11 +124,13 @@ extension WaterMix {
             viewModel.getCalCurrentTotatlPrice
                 .distinctUntilChanged()
                 .bind { [weak self] in
+                    if $0 == 0 {
+                        self?.currentStockView.totalPriceValue.textColor = UIColor.black
+                    }
                     self?.currentStockView.totalPriceValue.text = $0.withCommas()
                 }
                 .disposed(by: disposeBag)
-            
-            
+
             stockAddView.stockPriceTextField.rx.text.orEmpty
                 .map { UInt64($0) ?? 0 }
                 .bind(to: viewModel.getAddStockPrice)
@@ -132,21 +171,28 @@ extension WaterMix {
             viewModel.getTotalPurchasePrice
                 .distinctUntilChanged()
                 .bind { [weak self] in
+                    if $0 == 0 {
+                        self?.totalAccountView.totalStockValue.textColor = UIColor.black
+                    } else {
+                        self?.totalAccountView.totalStockValue.textColor = UIColor.ff5C00
+                    }
                     self?.totalAccountView.totalStockValue.text = Int64($0).withCommas()
-                    self?.totalAccountView.totalStockValue.textColor = UIColor.ff5C00
                 }
                 .disposed(by: disposeBag)
             
             viewModel.getTotalRatio
                 .distinctUntilChanged()
                 .bind{ [weak self] in
-                    self?.totalAccountView.proAndLossRatioValue.text = String(format: "%.2f %%", $0)
                     if $0 > 0  {
                         self?.totalAccountView.proAndLossRatioValue.textColor = UIColor.ff0F00
+                        self?.totalAccountView.proAndLossRatioValue.text = String(format: "%.2f %%", $0)
+                    } else if $0 == 0 {
+                        self?.totalAccountView.proAndLossRatioValue.textColor = UIColor.black
+                        self?.totalAccountView.proAndLossRatioValue.text = "0"
                     } else {
                         self?.totalAccountView.proAndLossRatioValue.textColor = UIColor._0075Ff
+                        self?.totalAccountView.proAndLossRatioValue.text = String(format: "%.2f %%", $0)
                     }
-                    
                 }
                 .disposed(by: disposeBag)
             
@@ -157,6 +203,30 @@ extension WaterMix {
                 }
                 .disposed(by: disposeBag)
             
+            arrowButton.rx.tap
+                .bind { [weak self] in
+                    self?.viewModel.getAddStockPrice.accept(0)
+                    self?.viewModel.getAddStockAmount.accept(0)
+                    
+                    self?.currentStockView.stockMarketPriceField.text = ""
+                    self?.currentStockView.stockPriceTextField.text = ""
+                    self?.currentStockView.stockAmountTextField.text = ""
+                    self?.currentStockView.totalPriceValue.text = "0"
+                    
+                    self?.stockAddView.stockAmountTextField.text = ""
+                    self?.stockAddView.stockPriceTextField.text = ""
+                    self?.stockAddView.totalPriceValue.text = "0"
+                    
+                    self?.totalAccountView.totalStockValue.text = "0"
+                    self?.totalAccountView.totalPriceValue.text = "0"
+                    self?.totalAccountView.totalAmountValue.text = "0"
+                    self?.totalAccountView.proAndLossRatioValue.text = "0"
+                    self?.totalAccountView.proAndLossValue.text = "0"
+                    
+                    self?.totalAccountView.totalStockValue.textColor = UIColor.black
+                    self?.totalAccountView.proAndLossRatioValue.textColor = UIColor.black
+                    
+                }.disposed(by: disposeBag)
         }
     }
 }
