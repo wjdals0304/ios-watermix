@@ -8,11 +8,16 @@ import UIKit
 import SnapKit
 import RxSwift
 import RxCocoa
+import GoogleMobileAds
+import AdSupport
+import AppTrackingTransparency
 
 extension WaterMix {
     
     final class RootView: BaseUIView {
-        
+
+        public var interstitial: GADInterstitialAd?
+
         let disposeBag = DisposeBag()
         private let viewModel: WaterMixModelType
         
@@ -79,6 +84,27 @@ extension WaterMix {
             
             let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
             contentView.addGestureRecognizer(tap)
+            
+            
+            DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
+                if #available(iOS 14, *) {
+                    ATTrackingManager.requestTrackingAuthorization { status in
+                        switch status {
+                        case .authorized:           // 허용됨
+                            print("IDFA = \(ASIdentifierManager.shared().advertisingIdentifier)")
+                        case .denied:               // 거부됨
+                            print("Denied")
+                        case .notDetermined:        // 결정되지 않음
+                            print("Not Determined")
+                        case .restricted:           // 제한됨
+                            print("Restricted")
+                        @unknown default:           // 알려지지 않음
+                            print("Unknow")
+                        }
+                    }
+                }
+            }
+
         }
         
         override func setupConstraints() {
@@ -135,7 +161,6 @@ extension WaterMix {
             }
         }
         @objc func dismissKeyboard() {
-            //Causes the view (or one of its embedded text fields) to resign the first responder status.
             contentView.endEditing(true)
         }
         
@@ -240,6 +265,12 @@ extension WaterMix {
             
             arrowButton.rx.tap
                 .bind { [weak self] in
+                    if self?.interstitial != nil {
+                        self?.interstitial?.present(fromRootViewController: self?.topMostController() ?? UIViewController())
+                    } else {
+                        print("Ad wasn't ready")
+                    }
+                    
                     self?.viewModel.getAddStockPrice.accept(0)
                     self?.viewModel.getAddStockAmount.accept(0)
                     
