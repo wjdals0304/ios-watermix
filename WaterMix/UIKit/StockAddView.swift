@@ -29,7 +29,7 @@ final class StockAddView: BaseUIView {
             NSAttributedString.Key.foregroundColor : UIColor._929292,
             NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20)
         ])
-        textField.keyboardType = .numberPad
+        textField.keyboardType = .decimalPad
         return textField
     }()
     
@@ -45,7 +45,7 @@ final class StockAddView: BaseUIView {
               NSAttributedString.Key.foregroundColor : UIColor._929292,
               NSAttributedString.Key.font: UIFont.systemFont(ofSize: 20)
           ])
-        textField.keyboardType = .numberPad
+        textField.keyboardType = .decimalPad
         return textField
     }()
     
