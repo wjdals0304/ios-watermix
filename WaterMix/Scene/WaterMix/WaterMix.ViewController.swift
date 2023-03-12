@@ -4,8 +4,6 @@
 //
 //  Created by 김정민 on 2022/06/03.
 //
-
-import Foundation
 import UIKit
 
 extension WaterMix {
@@ -16,14 +14,17 @@ extension WaterMix {
             super.loadView()
             self.view = WaterMix.RootView(viewModel: WaterMix.ViewModel())
         }
+        override func viewDidLayoutSubviews() {
+            super.viewDidLayoutSubviews()
+            self.navigationController?.isNavigationBarHidden = true
+        }
         
         override func viewDidLoad() {
             super.viewDidLoad()
-            title = L10n.title.description
-            self.navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage.undoArrow1, style: .plain, target: nil, action: nil)
-            self.navigationItem.rightBarButtonItem?.tintColor = UIColor._181818
         }
-        
+        override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+             self.view.endEditing(true)
+         }
     }
     
 }

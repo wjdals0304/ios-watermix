@@ -16,6 +16,15 @@ extension WaterMix {
         let disposeBag = DisposeBag()
         private let viewModel: WaterMixModelType
         
+        private lazy var scrollView: UIScrollView = {
+           let scrollView = UIScrollView()
+            scrollView.showsVerticalScrollIndicator = false
+            scrollView.isScrollEnabled = true
+            return scrollView
+        }()
+        private let contentView = UIView()
+
+        
         private let headerView = UIView()
         private let titleLabel: UILabel = {
            let label = UILabel()
@@ -51,20 +60,42 @@ extension WaterMix {
             
             [
                 headerView,
+                scrollView
+            ].forEach { self.addSubview($0) }
+                        
+            scrollView.addSubview(contentView)
+            
+            [
                 totalAccountView,
                 currentStockView,
                 stockAddView
-                
-            ].forEach { self.addSubview($0) }
-                        
+            ].forEach { contentView.addSubview($0)}
+            
+            
             [
              titleLabel,
              arrowButton
             ].forEach { self.headerView.addSubview($0)}
             
+            let tap = UITapGestureRecognizer(target: self, action: #selector(UIInputViewController.dismissKeyboard))
+            contentView.addGestureRecognizer(tap)
         }
         
         override func setupConstraints() {
+            
+            scrollView.snp.makeConstraints { make in
+                make.centerX.equalTo(self.snp.centerX)
+                make.width.equalTo(self.snp.width)
+                make.top.equalTo(self.headerView.snp.bottom)
+                make.bottom.equalTo(self.safeAreaLayoutGuide).inset(5)
+            }
+            contentView.snp.makeConstraints { make in
+                make.edges.equalTo(scrollView.contentLayoutGuide)
+                make.height.greaterThanOrEqualTo(self.snp.height).priority(.low)
+                make.width.equalTo(scrollView.snp.width)
+                make.centerX.equalTo(scrollView.snp.centerX)
+            }
+            
             headerView.snp.makeConstraints { make in
                 make.top.equalTo(self.safeAreaLayoutGuide)
                 make.leading.equalToSuperview().offset(15)
@@ -82,7 +113,7 @@ extension WaterMix {
             }
             
             totalAccountView.snp.makeConstraints { make in
-                make.top.equalTo(self.headerView.snp.bottom).offset(15)
+                make.top.equalToSuperview().offset(15)
                 make.leading.equalToSuperview().offset(15)
                 make.width.equalTo(self).multipliedBy(0.92)
                 make.height.equalTo(200)
@@ -102,6 +133,10 @@ extension WaterMix {
                 make.height.equalTo(250)
                 
             }
+        }
+        @objc func dismissKeyboard() {
+            //Causes the view (or one of its embedded text fields) to resign the first responder status.
+            contentView.endEditing(true)
         }
         
         override func bind() {
