@@ -167,17 +167,17 @@ extension WaterMix {
         override func bind() {
             
             currentStockView.stockMarketPriceField.rx.text.orEmpty
-                .map { UInt64($0) ?? 0 }
+                .map { Float64($0) ?? 0 }
                 .bind(to: viewModel.getCurrentMarketPrice)
                 .disposed(by: disposeBag)
             
             currentStockView.stockPriceTextField.rx.text.orEmpty
-                .map { UInt64($0) ?? 0 }
+                .map { Float64($0) ?? 0 }
                 .bind(to: viewModel.getCurrentStockPrice)
                 .disposed(by: disposeBag)
             
             currentStockView.stockAmountTextField.rx.text.orEmpty
-                .map { UInt64($0) ?? 0 }
+                .map { Float64($0) ?? 0 }
                 .bind(to: viewModel.getcurrentStockAmount)
                 .disposed(by: disposeBag)
                         
@@ -192,12 +192,12 @@ extension WaterMix {
                 .disposed(by: disposeBag)
 
             stockAddView.stockPriceTextField.rx.text.orEmpty
-                .map { UInt64($0) ?? 0 }
+                .map { Float64($0) ?? 0 }
                 .bind(to: viewModel.getAddStockPrice)
                 .disposed(by: disposeBag)
             
             stockAddView.stockAmountTextField.rx.text.orEmpty
-                .map { UInt64($0) ?? 0 }
+                .map { Float64($0) ?? 0 }
                 .bind(to: viewModel.getAddStockAmount)
                 .disposed(by: disposeBag)
             
