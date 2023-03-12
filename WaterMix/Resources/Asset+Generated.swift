@@ -30,5 +30,6 @@ extension UIColor {
 // MARK: - Images -
 
 extension UIImage {
+    static let undoArrow1 = UIImage(named: "undo-arrow 1", in: bundle, compatibleWith: nil)!
 }
 
