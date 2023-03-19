@@ -22,3 +22,11 @@ extension Int64 {
         return numberFormatter.string(from: NSNumber(value:self))!
     }
 }
+
+extension UInt64 {
+    func withCommas() -> String {
+        let numberFormatter = NumberFormatter()
+        numberFormatter.numberStyle = .decimal
+        return numberFormatter.string(from: NSNumber(value:self))!
+    }
+}

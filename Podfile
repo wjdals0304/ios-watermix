@@ -15,6 +15,7 @@ target 'WaterMix' do
   pod 'SwiftLint'  
   pod 'SnapKit', '~> 5.6.0'
   pod 'TextFieldEffects'
+  pod 'IQKeyboardManagerSwift', '6.3.0'
 
   target 'WaterMixTests' do
     inherit! :search_paths

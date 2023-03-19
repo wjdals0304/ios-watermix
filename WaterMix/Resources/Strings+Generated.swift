@@ -32,7 +32,7 @@ internal enum L10n {
   internal static var proAndLoss: String { L10n.tr("Localizable", "proAndLoss") }
   /// 손익률
   internal static var ratio: String { L10n.tr("Localizable", "Ratio") }
-  /// 물타기 계산기
+  /// 평단가 계산기
   internal static var title: String { L10n.tr("Localizable", "Title") }
   /// 최종 수량
   internal static var totalAmount: String { L10n.tr("Localizable", "TotalAmount") }

@@ -17,14 +17,14 @@ protocol WaterMixModelType {
     var getTotalRatio: Observable<Float> { get }
     var getProAndLoss: Observable<Float> { get }
     
-    var getCurrentMarketPrice: PublishRelay<UInt64> { get }
-    var getCurrentStockPrice: PublishRelay<UInt64> { get }
-    var getcurrentStockAmount: PublishRelay<UInt64> { get }
-    var getCalCurrentTotatlPrice: Observable<UInt64> { get }
+    var getCurrentMarketPrice: PublishRelay<Float64> { get }
+    var getCurrentStockPrice: PublishRelay<Float64> { get }
+    var getcurrentStockAmount: PublishRelay<Float64> { get }
+    var getCalCurrentTotatlPrice: Observable<Float64> { get }
     
-    var getAddStockPrice: PublishRelay<UInt64> { get }
-    var getAddStockAmount: PublishRelay<UInt64> { get }
-    var getAddTotalPrice: Observable<UInt64> { get }
+    var getAddStockPrice: PublishRelay<Float64> { get }
+    var getAddStockAmount: PublishRelay<Float64> { get }
+    var getAddTotalPrice: Observable<Float64> { get }
 }
 
 extension WaterMix {
@@ -37,14 +37,14 @@ extension WaterMix {
         var totalRatio: Observable<Float>
         var proAndLoss: Observable<Float>
                 
-        var currentMarketPrice = PublishRelay<UInt64>()
-        var currentStockPrice = PublishRelay<UInt64>()
-        var currentStockAmount = PublishRelay<UInt64>()
-        var calCurrentTotalPrice: Observable<UInt64>
+        var currentMarketPrice = PublishRelay<Float64>()
+        var currentStockPrice = PublishRelay<Float64>()
+        var currentStockAmount = PublishRelay<Float64>()
+        var calCurrentTotalPrice: Observable<Float64>
         
-        var addStockPrice = PublishRelay<UInt64>()
-        var addStockAmount = PublishRelay<UInt64>()
-        var addTotalPrice: Observable<UInt64>
+        var addStockPrice = PublishRelay<Float64>()
+        var addStockAmount = PublishRelay<Float64>()
+        var addTotalPrice: Observable<Float64>
 
         init() {
             // MARK: 총 매입 금액
@@ -149,31 +149,31 @@ extension WaterMix.ViewModel: WaterMixModelType {
         return self.totalRatio
     }
     
-    var getAddStockPrice: PublishRelay<UInt64> {
+    var getAddStockPrice: PublishRelay<Float64> {
         return self.addStockPrice
     }
     
-    var getAddStockAmount: PublishRelay<UInt64> {
+    var getAddStockAmount: PublishRelay<Float64> {
         return self.addStockAmount
     }
     
-    var getAddTotalPrice: Observable<UInt64> {
+    var getAddTotalPrice: Observable<Float64> {
         return self.addTotalPrice
     }
     
-    var getCurrentMarketPrice: PublishRelay<UInt64> {
+    var getCurrentMarketPrice: PublishRelay<Float64> {
         return self.currentMarketPrice
     }
     
-    var getCurrentStockPrice : PublishRelay<UInt64> {
+    var getCurrentStockPrice : PublishRelay<Float64> {
         return self.currentStockPrice
     }
     
-    var getcurrentStockAmount : PublishRelay<UInt64> {
+    var getcurrentStockAmount : PublishRelay<Float64> {
         return self.currentStockAmount
     }
     
-    var getCalCurrentTotatlPrice: Observable<UInt64> {
+    var getCalCurrentTotatlPrice: Observable<Float64> {
         return self.calCurrentTotalPrice
     }
     
