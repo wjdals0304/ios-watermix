@@ -88,19 +88,7 @@ extension WaterMix {
             
             DispatchQueue.main.asyncAfter(deadline: .now() + 1) {
                 if #available(iOS 14, *) {
-                    ATTrackingManager.requestTrackingAuthorization { status in
-                        switch status {
-                        case .authorized:           // 허용됨
-                            print("IDFA = \(ASIdentifierManager.shared().advertisingIdentifier)")
-                        case .denied:               // 거부됨
-                            print("Denied")
-                        case .notDetermined:        // 결정되지 않음
-                            print("Not Determined")
-                        case .restricted:           // 제한됨
-                            print("Restricted")
-                        @unknown default:           // 알려지지 않음
-                            print("Unknow")
-                        }
+                    ATTrackingManager.requestTrackingAuthorization { _ in
                     }
                 }
             }
@@ -236,7 +224,7 @@ extension WaterMix {
                     } else {
                         self?.totalAccountView.totalStockValue.textColor = UIColor.ff5C00
                     }
-                    self?.totalAccountView.totalStockValue.text = Int64($0).withCommas()
+                    self?.totalAccountView.totalStockValue.text = Float64($0).withCommas()
                 }
                 .disposed(by: disposeBag)
             
