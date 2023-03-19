@@ -16,6 +16,7 @@ target 'WaterMix' do
   pod 'SnapKit', '~> 5.6.0'
   pod 'TextFieldEffects'
   pod 'IQKeyboardManagerSwift', '6.3.0'
+  pod 'Google-Mobile-Ads-SDK'
 
   target 'WaterMixTests' do
     inherit! :search_paths
