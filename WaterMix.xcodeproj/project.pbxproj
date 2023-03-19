@@ -30,6 +30,9 @@
 		64EEAE22284C9E2400548FAF /* StockCurrentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64EEAE21284C9E2300548FAF /* StockCurrentView.swift */; };
 		64F78AEA285DABB3008AC56D /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 64F78AE9285DABB3008AC56D /* String+.swift */; };
 		DA6703B8432DA65C0684089B /* Pods_WaterMixTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D4475F003BF92CF959B1ABCA /* Pods_WaterMixTests.framework */; };
+		EA09F1C228C49F5F000261B7 /* Int+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA09F1C128C49F5F000261B7 /* Int+.swift */; };
+		EA92026729BD9A60006D0918 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA92026629BD9A60006D0918 /* Helper.swift */; };
+		EAAD896628D5B11200B45D21 /* Float+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAAD896528D5B11200B45D21 /* Float+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +87,9 @@
 		A26B36DBF83FD67A22B8276C /* Pods-WaterMix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WaterMix.debug.xcconfig"; path = "Target Support Files/Pods-WaterMix/Pods-WaterMix.debug.xcconfig"; sourceTree = "<group>"; };
 		ADFCCEB4D4E6060931D01494 /* Pods_WaterMix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterMix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4475F003BF92CF959B1ABCA /* Pods_WaterMixTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WaterMixTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA09F1C128C49F5F000261B7 /* Int+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Int+.swift"; sourceTree = "<group>"; };
+		EA92026629BD9A60006D0918 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		EAAD896528D5B11200B45D21 /* Float+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Float+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,7 @@
 				64EEADF328499AFF00548FAF /* Scene */,
 				64EEADF528499BBA00548FAF /* Resources */,
 				64EEAE1E284B009F00548FAF /* Extension */,
+				EA92026529BD9A36006D0918 /* Utils */,
 				64EEADF428499B0700548FAF /* UIKit */,
 				64EEADC328498D5300548FAF /* AppDelegate.swift */,
 				64EEADC528498D5300548FAF /* SceneDelegate.swift */,
@@ -214,6 +221,8 @@
 			isa = PBXGroup;
 			children = (
 				64F78AE9285DABB3008AC56D /* String+.swift */,
+				EA09F1C128C49F5F000261B7 /* Int+.swift */,
+				EAAD896528D5B11200B45D21 /* Float+.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -239,6 +248,14 @@
 				D4475F003BF92CF959B1ABCA /* Pods_WaterMixTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EA92026529BD9A36006D0918 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA92026629BD9A60006D0918 /* Helper.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -506,6 +523,9 @@
 				64EEADC428498D5300548FAF /* AppDelegate.swift in Sources */,
 				64EEAE072849A21300548FAF /* WaterMix.RootView.swift in Sources */,
 				64EEAE1D284A012E00548FAF /* Asset+Generated.swift in Sources */,
+				EA09F1C228C49F5F000261B7 /* Int+.swift in Sources */,
+				EAAD896628D5B11200B45D21 /* Float+.swift in Sources */,
+				EA92026729BD9A60006D0918 /* Helper.swift in Sources */,
 				64EEAE032849A1FC00548FAF /* WaterMix.ViewModel.swift in Sources */,
 				64EEAE092849A5C300548FAF /* TotalAccountView.swift in Sources */,
 				64EEAE0B2849A5DC00548FAF /* StockAddView.swift in Sources */,
@@ -696,7 +716,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XJJN8UXL48;
+				DEVELOPMENT_TEAM = RBFRAWL2VK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WaterMix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -726,7 +746,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = XJJN8UXL48;
+				DEVELOPMENT_TEAM = RBFRAWL2VK;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WaterMix/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
